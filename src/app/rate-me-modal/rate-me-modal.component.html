@@ -5,6 +5,12 @@
     Please, let us know how we did with your support request. All feedback is
     appreciated to help us improve our offering!
   </p>
-  <p>Rating icons placeholder</p>
+  <div>
+    <app-rating-point
+      *ngFor="let point of points"
+      [rating]="point"
+      (itemSelected)="onItemSelected($event)"
+    ></app-rating-point>
+  </div>
   <button>submit</button>
 </div>
