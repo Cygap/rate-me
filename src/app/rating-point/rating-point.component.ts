@@ -8,9 +8,4 @@ import { RatingPoint } from '../rating';
 })
 export class RatingPointComponent {
   @Input() rating!: RatingPoint;
-  @Output() itemSelected = new EventEmitter();
-  clickHandler() {
-    this.rating.selected = !this.rating.selected;
-    this.itemSelected.emit(this.rating);
-  }
 }

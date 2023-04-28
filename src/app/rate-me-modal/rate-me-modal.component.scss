@@ -32,6 +32,16 @@ app-rating-point {
   align-items: center;
 }
 
+.selected,
+.selected:hover {
+  background-color: $colorLightGrey;
+  color: $colorWhite;
+}
+app-rating-point:hover {
+  background-color: $colorOrange;
+  color: $colorWhite;
+  cursor: pointer;
+}
 button {
   background-color: $colorOrange;
   color: $colorWhite;
@@ -42,4 +52,15 @@ button {
   width: $modalWidth * 0.75;
   border-radius: $FontSizeParagraph * 1.5;
   align-self: center;
+}
+button:hover {
+  background-color: $colorWhite;
+  color: $colorOrange;
+  cursor: pointer;
+}
+.disabled,
+.disabled:hover {
+  background-color: $colorLightGrey;
+  color: $colorWhite;
+  cursor: default;
 }
