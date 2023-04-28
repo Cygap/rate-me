@@ -1,0 +1,30 @@
+//Sizes
+$modalHeight: 350px;
+$modalWidth: 450px;
+
+//  Colors
+
+//  Primary
+
+$colorOrange: hsl(25, 97%, 53%);
+
+// Neutral
+
+$colorWhite: hsl(0, 0%, 100%);
+$colorLightGrey: hsl(217, 12%, 63%);
+$colorDarkGrey: hsl(216, 12%, 25%);
+$colorMediumGrey: hsl(216, 12%, 54%);
+$colorDarkBlue: hsl(213, 19%, 18%);
+$colorVeryDarkBlue: hsl(216, 12%, 8%);
+
+// Typography
+
+//  Body Copy
+
+$FontSizeParagraph: 15px;
+
+// Font
+@import "https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap";
+$fontFamily: Overpass;
+$fontWeightsLight: 400;
+$fontWeightsBold: 700;

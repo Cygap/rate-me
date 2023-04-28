@@ -1,16 +1,16 @@
+<!-- <div> -->
+<img src="../../assets/images/icon-star.svg" alt="star icon" />
+<h1>How did we do?</h1>
+<p>
+  Please, let us know how we did with your support request. All feedback is
+  appreciated to help us improve our offering!
+</p>
 <div>
-  <img src="../../assets/images/icon-star.svg" alt="star icon" />
-  <h1>How did we do?</h1>
-  <p>
-    Please, let us know how we did with your support request. All feedback is
-    appreciated to help us improve our offering!
-  </p>
-  <div>
-    <app-rating-point
-      *ngFor="let point of points"
-      [rating]="point"
-      (itemSelected)="onItemSelected($event)"
-    ></app-rating-point>
-  </div>
-  <button (click)="onSubmit()">submit</button>
+  <app-rating-point
+    *ngFor="let point of points"
+    [rating]="point"
+    (itemSelected)="onItemSelected($event)"
+  ></app-rating-point>
 </div>
+<button (click)="onSubmit()">submit</button>
+<!-- </div> -->

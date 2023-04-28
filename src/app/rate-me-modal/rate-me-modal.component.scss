@@ -1,0 +1,45 @@
+@import "../variables";
+img {
+  width: fit-content;
+  margin: $modalHeight * 0.05 $modalWidth * 0.1;
+}
+h1 {
+  font-weight: $fontWeightsBold;
+  color: $colorWhite;
+  margin: 0 $modalWidth * 0.1;
+}
+p {
+  font-weight: $fontWeightsLight;
+  color: $colorLightGrey;
+  font-size: $FontSizeParagraph;
+  margin: $modalHeight * 0.05 $modalWidth * 0.1;
+}
+p + div {
+  display: flex;
+  flex-flow: row wrap;
+  gap: $FontSizeParagraph * 1.5;
+  margin: $FontSizeParagraph * 1.5 auto;
+}
+app-rating-point {
+  color: $colorLightGrey;
+  background-color: $colorDarkGrey;
+  border-radius: 50%;
+  font-size: $FontSizeParagraph;
+  height: $FontSizeParagraph * 3;
+  width: $FontSizeParagraph * 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: $colorOrange;
+  color: $colorWhite;
+  font-weight: $fontWeightsLight;
+  font-variant: small-caps;
+  font-size: $FontSizeParagraph;
+  height: $FontSizeParagraph * 2.5;
+  width: $modalWidth * 0.75;
+  border-radius: $FontSizeParagraph * 1.5;
+  align-self: center;
+}

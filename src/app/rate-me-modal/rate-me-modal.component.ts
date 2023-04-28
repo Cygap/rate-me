@@ -1,9 +1,15 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  Output,
+  EventEmitter,
+  ViewEncapsulation,
+} from '@angular/core';
 import { RatingPoint, points } from '../rating';
 @Component({
   selector: 'app-rate-me-modal',
   templateUrl: './rate-me-modal.component.html',
-  styleUrls: ['./rate-me-modal.component.css'],
+  styleUrls: ['./rate-me-modal.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class RateMeModalComponent {
   points = points;
