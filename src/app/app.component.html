@@ -14,5 +14,11 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<app-rate-me-modal (ratingScore)="handleSubmit($event)"></app-rate-me-modal>
-<app-thank-you-modal [ratingScore]="itemID"></app-thank-you-modal>
+<app-rate-me-modal
+  (ratingScore)="handleSubmit($event)"
+  *ngIf="!itemID"
+></app-rate-me-modal>
+<app-thank-you-modal
+  [ratingScore]="itemID"
+  *ngIf="itemID"
+></app-thank-you-modal>
