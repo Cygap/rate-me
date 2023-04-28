@@ -1,5 +1,14 @@
 @import "../variables";
 p {
   text-align: center;
-  margin: auto $modalWidth * 0.15;
+  margin: auto $modalWidth * 0.08;
+}
+
+img + p {
+  color: $colorOrange;
+  background-color: $colorDarkGrey;
+  border-radius: $FontSizeParagraph;
+  width: $modalWidth * 0.5;
+  height: $FontSizeParagraph * 1.5;
+  padding-top: $FontSizeParagraph * 0.25;
 }

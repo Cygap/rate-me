@@ -1,18 +1,27 @@
 @import "../variables";
-img {
+.icon-container {
+  background-color: $colorDarkGrey;
+  border-radius: 50%;
+  width: $FontSizeParagraph * 3;
+  height: $FontSizeParagraph * 3;
+  margin: $modalHeight * 0.05 $modalWidth * 0.05;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div img {
   width: fit-content;
-  margin: $modalHeight * 0.05 $modalWidth * 0.1;
 }
 h1 {
   font-weight: $fontWeightsBold;
   color: $colorWhite;
-  margin: 0 $modalWidth * 0.1;
+  margin: 0 $modalWidth * 0.05;
 }
 p {
   font-weight: $fontWeightsLight;
   color: $colorLightGrey;
   font-size: $FontSizeParagraph;
-  margin: $modalHeight * 0.05 $modalWidth * 0.1;
+  margin: $modalHeight * 0.05 $modalWidth * 0.05;
 }
 p + div {
   display: flex;
