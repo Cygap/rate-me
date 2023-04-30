@@ -26,29 +26,13 @@ export class RateMeModalComponent {
         .filter((point) => point.id !== item.id)
         .forEach((point) => (point.selected = false));
       this.maySubmit = true;
-      console.log(
-        '%crate-me-modal.component.ts line:29 points',
-        'color: #007acc;',
-        points,
-        this.maySubmit
-      );
     } else {
       this.maySubmit = false;
     }
   }
 
   onSubmit() {
-    console.log(
-      '%crate-me-modal.component.ts line:40 this.maySubmit',
-      'color: #007acc;',
-      this.maySubmit
-    );
     if (this.maySubmit) {
-      console.log(
-        '%crate-me-modal.component.ts line:41 submitted points',
-        'color: #007acc;',
-        points
-      );
       const item = this.points.filter((point) => point.selected)[0];
       this.ratingScore.emit(item.id);
     }
